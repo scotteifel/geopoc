@@ -34,6 +34,11 @@ node main.js
       "geometry": {
         "type": "Point",
         "coordinates": [-93.699, 40.033, 125.3]
+      },
+      "properties": {
+        "originalX": 440287.5,
+        "originalY": 4431748.25,
+        "originalZ": 125.3
       }
     }
   ]
