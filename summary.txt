@@ -1,0 +1,35 @@
+Summary
+We are seeking an expert JavaScript developer to create a single, highly performant, and reusable function that accurately converts raw XYZ coordinate data (typically from survey data) into a standard GeoJSON FeatureCollection.
+
+*Key Requirements & Technical Scope*
+Core Function Development: Deliver a single, well-documented JavaScript function (or module) compatible with modern browser and Node.js environments.
+
+Input Parsing: The function must efficiently parse input data from a multi-line string or array representing the XYZ file structure (space- or comma-separated: X Y Z).
+Projection Conversion (Critical):
+Must integrate and utilize proj4js (or an equivalent, battle-tested library).
+
+The function must accept two CRS definition parameters (fromProjection and toProjection, e.g., EPSG strings or PROJ.4 definitions).
+It must accurately transform the X and Y coordinates from the source CRS to the target CRS (typically WGS84/EPSG:4326 for GeoJSON).
+
+The transformation must be 3D. The Z value (elevation/datum) must also be accurately converted from the source vertical datum (e.g., NAVD88) to the target vertical datum (e.g., EGM96 or WGS84 ellipsoid height), using the correct geoid models or transformation grids (e.g., NADCON 5.0 grids in proj4).
+
+Output Format: The final output must be a standard GeoJSON FeatureCollection where each XYZ point is represented as a GeoJSON Point feature.
+Performance: The solution should be optimized for large datasets (handling thousands to millions of points).
+
+*Deliverables*
+A. One clean, modular JavaScript file containing the conversion function.
+B. Setup instructions and a small example of how to run the function in a standard Node.js environment.
+C. A brief technical write-up detailing the approach to handling projection and vertical datum transformations.
+
+Please mention your prior experience with proj4js, geospatial data, coordinate transformation, and handling 3D/vertical datums when submitting your proposal.
+
+Hours to be determined
+Hourly
+1 to 3 months
+Duration
+Expert
+I am willing to pay higher rates for the most experienced freelancers
+
+
+Include a link to your GitHub profile and/or website
+What frameworks have you worked with?
